@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .heading{
+            text-align: center;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .roomno{
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+
+        .suggestion{
+            text-align: center;
+        }
+        .complaint{
+            text-align: center;
+        }
+        .button{
+            text-align: center;
+        }
+
+        
+        .roomno input{
+            width: 50%;
+            padding: 5px 3px;
+            font-size: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+
+        .year select{
+            width: 50%;
+            padding: 5px 3px;
+            font-size: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+
+        .suggestion textarea{
+            width: 50%;
+            margin: 5px 3px;
+            padding: 5px 3px;
+            font-size: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+
+        .complaint textarea{
+            width: 50%;
+            margin: 5px 3px;
+            padding: 5px 3px;
+            font-size: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+
+        
+        b{
+            font-size: 30px;      
+          }
+          .button input{
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 8px;
+            font-size: 18px;
+            background: rgb(3, 61, 84);
+            color: white;
+            cursor: pointer;
+            box-shadow: darkgrey;
+          }
+    
+    </style>
+</head>
+<body bgcolor="#D3D3D3">
+    
+    <div class="container">
+        <h1 class="heading">Fill these Details</h1>
+    <form action="/COLLEGE GRAWISE/php/room.php" method="POST">
+        <div class="roomno">
+            <label>
+                <b>Enter your room no.</b><br>
+                <input type="text" name="room">
+            </label>
+        </div>
+        <br><br>
+
+        <div class="suggestion">
+        <label>
+            <b>Enter your suggestion</b><br>
+             <textarea cols="30" rows="10" name="suggestion"></textarea>
+        </label>
+        </div>
+        <br><br>
+
+        <div class="complaint">
+            <label>
+                <b>Enter your complaint</b><br>
+                 <textarea cols="30" rows="10" name="complaint"></textarea>
+            </label>
+            </div>
+            <br><br>
+    
+
+        <div class="button">
+            <input type="Reset">
+            <input type="Submit">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
