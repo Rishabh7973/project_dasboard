@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh-portfolio page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color:white;
+        }
+        nav{
+           display:flex;
+           justify-content:  space-around;
+           align-items: center;
+           height:80px;
+           background-color:rgb(11, 11, 53);
+        }
+        nav ul{
+            display:flex;
+            justify-content:center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(239, 129, 140);
+            font-size: 1.02rem;
+        }
+        .left{
+            font-size: 35px ;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            
+        }
+        .firstsection  >div{
+            width: 30%;
+            
+        }
+        .leftsection{
+            font-size: 2rem;
+            margin: 70px 0;
+
+        }
+        .rightsection img{
+           
+              width: 80%;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .leftsection button{
+            margin: 23px;
+            padding:12px ;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius:6px ;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        main hr{
+            border: 0;
+            background-color: rgb(124, 124, 240);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rishabh portfolio</div>
+            <div class="right">
+                <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">About</a></li>
+             <li><a href="/">Services</a></li>
+             <li><a href="/">Project</a></li>
+            <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi! My name is<span class="yellow"> Rishabh Tiwari</span></div>
+               <div>I am a  Passionate </div>
+               <span id="element"></span>
+               <div class="button">
+                <button>Download Resume</button>
+                <button> Visit GitHub</button>
+               </div>
+            </div>
+            <div class="rightsection">
+                right
+            </div>
+
+        </section><hr>
+        <section class="secondsection"> 
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [' Full Stack Web developer', 'Content writer','Video Editor.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
